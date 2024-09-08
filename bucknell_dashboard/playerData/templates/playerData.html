@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to the Bucknell Baseball Dashboard!</h1>
+<h4>Designed by Connor Vucovich</h4>
+
+<h1>Pitchers</h1>
+  
+<ul>
+  {% for x in PitcherList %}
+    <li><a href="playerDisplay/{{ x }}">{{ x }}</a></li>
+  {% endfor %}
+</ul>
+
+
+<p><a href="/upload_csv">Click here to upload new data</a></p>
+</body>
+</html>
