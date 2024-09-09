@@ -3,13 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>test</title>
+  <title>PlayerChartDisplay</title>
 </head>
 <body>
   {% autoescape off %}
   {{ plot_div | safe }}
   {% endautoescape %}
 
-  <p>Return to <a href="/playerData">player display</a></p>
+  {% autoescape off %}
+  {{ spin_plot | safe }}
+  {% endautoescape %}
+
+  {% autoescape off %}
+  {{ mov_plot | safe }}
+  {% endautoescape %}
+
+  {% autoescape off %}
+  {{ rel_plot | safe }}
+  {% endautoescape %}
+
+  {% autoescape off %}
+  {{ hit_plot | safe }}
+  {% endautoescape %}
+
+
+  {% autoescape off %}
+  {{ infield_hit | safe }}
+  {% endautoescape %}
+
+  <p>Return to <a href="/home">player display</a></p>
 </body>
 </html>
